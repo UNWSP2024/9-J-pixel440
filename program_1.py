@@ -5,9 +5,11 @@
 
 def count_file_lines():
     ######################
-    # Add your code here #
+    with open('names.txt','r') as file:
+        number_of_names = len(file.readlines())
     ######################
-    print('In the count_file_lines function')
+    print('In the count_file_lines function,')
+    print(f"the number of names in 'names.txt' is {number_of_names}.")
 
 
 
